@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atliq Fast Food - Authentic Chennai Street Food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#menu">MENU</a>
+            <a href="#location">LOCATION</a>
+            <a href="#aboutus">ABOUT US</a>
+            <a href="#contactus">CONTACT</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="grid-container">
+        <img src="menu1.jpg" alt="Menu item 1">
+        <img src="menu2.jpg" alt="Menu item 2">
+        <img src="menu3.jpg" alt="Menu item 3">
+    </div>
+    </section>
+
+    <section id="location" class="location">
+        <div class="container">
+            <h2>Our Locations in Chennai</h2>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <h3>T. Nagar</h3>
+                    <p>12 North Usman Road, T. Nagar</p>
+                    <p>Open: 7AM - 11PM</p>
+                </div>
+                <div class="location-card">
+                    <h3>Anna Nagar</h3>
+                    <p>45 2nd Avenue, Anna Nagar</p>
+                    <p>Open: 7AM - 11PM</p>
+                </div>
+                <div class="location-card">
+                    <h3>Velachery</h3>
+                    <p>78 100 Feet Road, Velachery</p>
+                    <p>Open: 7AM - 11PM</p>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497512.3950189785!2d79.92880739999999!3d13.0475258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutus">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Founded in 1995, Atliq Fast Food has been serving authentic Chennai street food for over 25 years. Our recipes have been passed down through generations, ensuring you get the most authentic flavors of South India.</p>
+        </div>
+    </section>
+
+    <section id="contactus">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Call Us</h3>
+                    <p>+91 7912345678</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>info@atliqfastfood.com</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Opening Hours</h3>
+                    <p>Mon-Sun: 7AM - 11PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Atliq Fast Food. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-container">
+        <iframe id="chatbot-iframe" class="chatbot-iframe" src="https://console.dialogflow.com/api-client/demo/embedded/b828d2c9-300f-4e4d-a8c9-b690698f87af"></iframe>
+        <button id="chatbot-btn" class="chatbot-btn">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+    </div>
+
+    <script>
+        document.getElementById('chatbot-btn').addEventListener('click', function() {
+            const iframe = document.getElementById('chatbot-iframe');
+            iframe.classList.toggle('chatbot-visible');
+            
+            // Change icon based on visibility
+            const icon = this.querySelector('i');
+            if (iframe.classList.contains('chatbot-visible')) {
+                icon.classList.remove('fa-comment-dots');
+                icon.classList.add('fa-times');
+                this.querySelector('.tooltip').textContent = 'Close chat';
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-comment-dots');
+                this.querySelector('.tooltip').textContent = 'Chat with us!';
+            }
+        });
+    </script>
+</body>
+</html>
