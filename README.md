@@ -1,6 +1,6 @@
 # 🌙 LunaChatbot — Intelligent Food Ordering Assistant
 
-**LunaChatbot** is a smart, conversational food ordering system built using **Dialogflow ES**, **FastAPI**, **Python**, and **MySQL** — seamlessly integrated into a custom frontend webpage. Designed to handle real-time food orders, modifications, and tracking via natural conversation, Luna brings the magic of Tamil-inspired cuisine to life through a chatbot experience.
+**LunaChatbot** is a smart, conversational food ordering system built using **Dialogflow ES**, **FastAPI**, **Python**, and **MySQL**  seamlessly integrated into a custom frontend webpage. Designed to handle real-time food orders, modifications, and tracking via natural conversation, Luna brings the magic of Tamil-inspired cuisine to life through a chatbot experience.
 
 ![Screenshot 2025-06-05 165726](https://github.com/user-attachments/assets/75421549-4559-4b84-82df-1e08bfc11da5)
 
