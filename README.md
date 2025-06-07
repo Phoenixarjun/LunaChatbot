@@ -105,5 +105,4 @@ Inspired by the flavors of Tamil Nadu and powered by conversational AI.
 
 MIT License — open for learning, forking, and contribution.
 
-```
 
