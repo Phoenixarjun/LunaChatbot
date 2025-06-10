@@ -34,8 +34,8 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/lunachatbot.git
-cd lunachatbot
+git clone https://github.com/Phoenixarjun/LunaChatbot
+cd LunaChatbot
 ````
 
 ### 2. Create a Virtual Environment
